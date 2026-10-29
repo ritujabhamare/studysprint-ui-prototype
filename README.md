@@ -17,7 +17,7 @@ StudySprint is a simple, responsive study-planning web prototype that helps stud
 No installation or build tools are required.
 
 ## Figma prototype
-Add your Figma share link here: `PASTE_FIGMA_LINK_HERE`
+Open the StudySprint Figma Prototype: `https://www.figma.com/design/8gTtSTGH1ZCo5oqiqQVIIK/Untitled?node-id=0-1&t=pTFNa4r676zZ4Dmx-1`
 
 ## Technologies
 - HTML5
