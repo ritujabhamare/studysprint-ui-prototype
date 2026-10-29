@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySprint | Student Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">S</span><span>StudySprint</span></div>
+    <div class="top-note">Small steps. Big progress.</div>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">YOUR PERSONAL STUDY SPACE</p>
+        <h1>Let's make today count.</h1>
+        <p class="subheading">Plan your tasks, stay focused, and celebrate every little win.</p>
+      </div>
+      <div class="date-card"><span>📚</span><div><strong>Study mode</strong><small>One task at a time</small></div></div>
+    </section>
+
+    <section class="stats">
+      <article class="stat-card"><span class="stat-icon lavender">☑</span><div><p>Total tasks</p><strong id="totalCount">3</strong></div></article>
+      <article class="stat-card"><span class="stat-icon mint">✓</span><div><p>Completed</p><strong id="completedCount">1</strong></div></article>
+      <article class="stat-card"><span class="stat-icon peach">◎</span><div><p>Progress</p><strong id="progressPercent">33%</strong></div></article>
+    </section>
+
+    <section class="content-grid">
+      <div class="panel tasks-panel">
+        <div class="panel-heading">
+          <div><h2>Today's tasks</h2><p>Keep your momentum going.</p></div>
+          <span class="task-pill" id="remainingLabel">2 remaining</span>
+        </div>
+
+        <form id="taskForm" class="add-form">
+          <label class="sr-only" for="taskInput">New study task</label>
+          <input id="taskInput" type="text" placeholder="e.g. Revise Unit 3 notes" maxlength="70" required>
+          <button type="submit">+ Add task</button>
+        </form>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+        <ul id="taskList" class="task-list">
+          <li class="task-item completed" data-task="1"><button class="check-btn" aria-label="Mark Revise lecture notes incomplete">✓</button><span class="task-name">Revise lecture notes</span><span class="task-tag">Revision</span></li>
+          <li class="task-item" data-task="2"><button class="check-btn" aria-label="Mark Complete assignment complete"></button><span class="task-name">Complete assignment</span><span class="task-tag">Priority</span></li>
+          <li class="task-item" data-task="3"><button class="check-btn" aria-label="Mark Practice 10 questions complete"></button><span class="task-name">Practice 10 questions</span><span class="task-tag">Practice</span></li>
+        </ul>
+        <div id="emptyMessage" class="empty-message" hidden>No tasks yet. Add one above to get started!</div>
+      </div>
+
+      <aside class="panel progress-panel">
+        <div class="panel-heading"><div><h2>Your progress</h2><p>Every step matters.</p></div></div>
+        <div class="progress-circle" id="progressCircle"><div><strong id="circlePercent">33%</strong><span>completed</span></div></div>
+        <p class="progress-caption" id="progressCaption">You're off to a great start. Keep going!</p>
+        <div class="mini-tip"><span>💡</span><div><strong>Study tip</strong><p>Try 25 minutes of focused study, then take a 5-minute break.</p></div></div>
+      </aside>
+    </section>
+    <footer>Made for focused minds <span>♥</span> StudySprint · Student Study Planner</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
